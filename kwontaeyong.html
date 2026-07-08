@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="ko">
+<head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>권태용 (무권) | Facilitator</title>
+<meta name="description" content="셀프리더십·커리어·의사소통 전문 퍼실리테이터 권태용(무권)의 프로필입니다.">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700;800&family=Public+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+<script id="tailwind-config">
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: { DEFAULT: "#1b2a4a", 50: "#eef1f7", 100: "#d7dee9", 600: "#2f4468", 700: "#24365a", 800: "#1b2a4a", 900: "#101a30" },
+                        gold: { DEFAULT: "#b8963f", 50: "#faf3e2", 100: "#f0ddae", 400: "#c7a656", 500: "#b8963f", 600: "#997d34" },
+                        paper: "#faf6ec"
+                    },
+                    fontFamily: {
+                        sans: ["'Noto Sans KR'", "'Public Sans'", "sans-serif"]
+                    },
+                    spacing: {
+                        gutter: "24px",
+                        "container-max": "1120px",
+                        "section-gap": "88px"
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+        body { background-color: #faf6ec; color: #1b2a4a; }
+        .scroll-mt-nav { scroll-margin-top: 64px; }
+        @media (min-width: 768px) { .scroll-mt-nav { scroll-margin-top: 84px; } }
+
+        #scroll-progress {
+            position: fixed; top: 0; left: 0; height: 3px; width: 0%;
+            background: linear-gradient(90deg, #1b2a4a, #b8963f);
+            z-index: 60; transition: width 0.1s ease-out;
+        }
+
+        .reveal { opacity: 0; transform: translateY(26px); transition: opacity .6s cubic-bezier(.22,1,.36,1), transform .6s cubic-bezier(.22,1,.36,1); }
+        .reveal.in-view { opacity: 1; transform: translateY(0); }
+        .reveal-left { opacity: 0; transform: translateX(-28px); transition: opacity .6s cubic-bezier(.22,1,.36,1), transform .6s cubic-bezier(.22,1,.36,1); }
+        .reveal-left.in-view { opacity: 1; transform: translateX(0); }
+        .reveal-right { opacity: 0; transform: translateX(28px); transition: opacity .6s cubic-bezier(.22,1,.36,1), transform .6s cubic-bezier(.22,1,.36,1); }
+        .reveal-right.in-view { opacity: 1; transform: translateX(0); }
+
+        .lift-card { transition: transform .3s cubic-bezier(.22,1,.36,1), box-shadow .3s ease; }
+        .lift-card:hover { transform: translateY(-6px); }
+
+        .stat-number { font-variant-numeric: tabular-nums; }
+
+        @keyframes float-slow { 0%,100% { transform: translateY(0px); } 50% { transform: translateY(-10px); } }
+        .animate-float { animation: float-slow 6s ease-in-out infinite; }
+
+        header nav a { position: relative; transition: color .25s ease; }
+        header nav a::after {
+            content: ""; position: absolute; left: 0; bottom: -4px; width: 0%; height: 2px;
+            background: #b8963f; transition: width .3s ease;
+        }
+        header nav a:hover::after { width: 100%; }
+    </style>
+</head>
+<body class="overflow-x-hidden">
+<div id="scroll-progress"></div>
+<!-- Header -->
+<header class="fixed top-0 left-0 right-0 z-50 bg-paper/90 backdrop-blur border-b border-navy-100">
+<nav class="flex justify-between items-center w-full px-gutter max-w-container-max mx-auto h-16 md:h-20">
+<div class="font-extrabold text-base sm:text-lg md:text-xl text-navy whitespace-nowrap">권태용 <span class="text-gold">Facilitator</span></div>
+<div class="hidden md:flex gap-8 items-center text-sm font-semibold">
+<a class="text-navy" href="#home">Home</a>
+<a class="text-navy-600/70 hover:text-navy" href="#background">Background</a>
+<a class="text-navy-600/70 hover:text-navy" href="#specialty">Specialty</a>
+<a class="text-navy-600/70 hover:text-navy" href="#clients">Clients</a>
+<a class="text-navy-600/70 hover:text-navy" href="#contact">Contact</a>
+</div>
+<button class="md:hidden text-navy" id="menu-toggle">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</nav>
+<div class="hidden md:hidden flex-col gap-4 px-gutter pb-6 bg-paper" id="mobile-menu">
+<a class="text-navy font-semibold" href="#home">Home</a>
+<a class="text-navy-600/70 font-semibold" href="#background">Background</a>
+<a class="text-navy-600/70 font-semibold" href="#specialty">Specialty</a>
+<a class="text-navy-600/70 font-semibold" href="#clients">Clients</a>
+<a class="text-navy-600/70 font-semibold" href="#contact">Contact</a>
+</div>
+</header>
+
+<main class="pt-16 md:pt-20">
+<!-- Hero -->
+<section class="relative w-full px-gutter max-w-container-max mx-auto py-20 md:py-28 grid grid-cols-1 md:grid-cols-12 gap-12 items-center overflow-hidden" id="home">
+<div class="absolute -top-16 -right-24 w-80 h-80 bg-gold-100 rounded-full blur-3xl opacity-60 pointer-events-none"></div>
+<div class="absolute bottom-0 left-0 w-72 h-72 bg-navy-50 rounded-full blur-3xl pointer-events-none"></div>
+
+<div class="md:col-span-7 space-y-6 relative z-10">
+<div class="reveal">
+<p class="text-gold-600 font-bold tracking-widest text-sm uppercase mb-3">호(號) 무권無倦</p>
+<h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold text-navy leading-tight">권태용</h1>
+<p class="text-lg md:text-xl text-navy-600/80 font-medium mt-3">셀프리더십 · 커리어 · 의사소통 전문 퍼실리테이터</p>
+</div>
+<div class="reveal max-w-xl border-l-4 border-gold pl-5" style="transition-delay:0.1s">
+<p class="text-navy-600/80 leading-relaxed">가치를 이루기 위해 게을리 행동하지 않고 계속해서 발전을 추구한다<br>호 <strong class="font-bold text-navy">무권無倦</strong>의 뜻입니다.</p>
+</div>
+<div class="flex gap-4 pt-2 reveal" style="transition-delay:0.2s">
+<a class="bg-navy text-white px-8 py-3 rounded-md font-semibold hover:bg-navy-700 hover:-translate-y-0.5 transition-all shadow-sm" href="#contact">연락하기</a>
+<a class="border-2 border-navy text-navy px-8 py-3 rounded-md font-semibold hover:bg-navy-50 hover:-translate-y-0.5 transition-all" href="#specialty">전문분야 보기</a>
+</div>
+</div>
+
+<div class="md:col-span-5 flex justify-center md:justify-end relative z-10 reveal-right">
+<div class="relative w-full max-w-[320px] aspect-square animate-float">
+<div class="absolute inset-0 rounded-full border-4 border-gold-100"></div>
+<div class="absolute inset-4 rounded-full bg-gradient-to-br from-navy to-navy-700 shadow-xl flex items-center justify-center">
+<span class="text-white font-extrabold text-8xl">권</span>
+</div>
+<div class="absolute -bottom-2 -right-2 bg-gold text-white text-xs font-bold px-4 py-2 rounded-full shadow-md">Facilitator</div>
+</div>
+</div>
+</section>
+
+<!-- Highlight badges -->
+<section class="w-full px-gutter max-w-container-max mx-auto pb-16">
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-3 sm:gap-4 md:gap-6 reveal">
+<div class="lift-card bg-white border border-navy-100 rounded-xl p-4 sm:p-6 flex items-center gap-4 shadow-sm">
+<div class="w-11 h-11 shrink-0 flex items-center justify-center bg-gold-50 rounded-full text-gold-600"><span class="material-symbols-outlined">domain</span></div>
+<p class="text-sm sm:text-base font-semibold text-navy">다수 기업·공공기관 출강</p>
+</div>
+<div class="lift-card bg-white border border-navy-100 rounded-xl p-4 sm:p-6 flex items-center gap-4 shadow-sm">
+<div class="w-11 h-11 shrink-0 flex items-center justify-center bg-gold-50 rounded-full text-gold-600"><span class="material-symbols-outlined">school</span></div>
+<p class="text-sm sm:text-base font-semibold text-navy">전국 대학·학교 출강</p>
+</div>
+<div class="lift-card bg-white border border-navy-100 rounded-xl p-4 sm:p-6 flex items-center gap-4 shadow-sm">
+<div class="w-11 h-11 shrink-0 flex items-center justify-center bg-gold-50 rounded-full text-gold-600"><span class="material-symbols-outlined">verified</span></div>
+<p class="text-sm sm:text-base font-semibold text-navy">6개 자격·인증 프로그램</p>
+</div>
+</div>
+</section>
+
+<!-- Background -->
+<section class="py-section-gap w-full px-gutter max-w-container-max mx-auto scroll-mt-nav border-t border-navy-100" id="background">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-12">
+<div class="md:col-span-4 reveal space-y-8">
+<div>
+<h2 class="text-2xl md:text-3xl font-extrabold text-navy">Background</h2>
+<p class="text-sm text-navy-600/60 mt-2 uppercase tracking-widest">경력 및 이력</p>
+</div>
+<div class="hidden md:block rounded-xl overflow-hidden border border-navy-100 shadow-sm aspect-[4/5]">
+<svg viewBox="0 0 300 375" class="w-full h-full" role="img" aria-label="성장과 발전을 상징하는 그래픽">
+<defs>
+<linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1">
+<stop offset="0%" stop-color="#eef1f7"/>
+<stop offset="100%" stop-color="#f0ddae"/>
+</linearGradient>
+</defs>
+<rect width="300" height="375" fill="url(#bgGrad)"/>
+<circle cx="255" cy="55" r="70" fill="#1b2a4a" fill-opacity="0.07"/>
+<circle cx="30" cy="330" r="55" fill="#b8963f" fill-opacity="0.18"/>
+<g>
+<rect x="55" y="270" width="34" height="55" rx="3" fill="#b8963f" fill-opacity="0.6"/>
+<rect x="100" y="235" width="34" height="90" rx="3" fill="#b8963f" fill-opacity="0.8"/>
+<rect x="145" y="190" width="34" height="135" rx="3" fill="#997d34"/>
+<rect x="190" y="140" width="34" height="185" rx="3" fill="#1b2a4a"/>
+</g>
+<path d="M60,268 L104,232 L149,186 L196,120" fill="none" stroke="#1b2a4a" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="1 9"/>
+<circle cx="60" cy="268" r="6" fill="#1b2a4a"/>
+<circle cx="104" cy="232" r="6" fill="#1b2a4a"/>
+<circle cx="149" cy="186" r="6" fill="#1b2a4a"/>
+<circle cx="207" cy="112" r="10" fill="#faf6ec" stroke="#1b2a4a" stroke-width="3"/>
+<path d="M203,112 l3,4 l6,-8" fill="none" stroke="#1b2a4a" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+</div>
+</div>
+<div class="md:col-span-8 space-y-8">
+<div class="flex gap-5 items-start reveal">
+<div class="w-11 h-11 flex items-center justify-center bg-navy rounded-full text-white shrink-0 shadow-sm">
+<span class="material-symbols-outlined text-xl">work</span>
+</div>
+<div>
+<span class="text-xs font-bold text-gold-600 uppercase tracking-widest block mb-1">現</span>
+<h4 class="text-lg font-bold text-navy">마음별연구소 소장</h4>
+</div>
+</div>
+<div class="flex gap-5 items-start reveal" style="transition-delay:0.05s">
+<div class="w-11 h-11 flex items-center justify-center bg-navy rounded-full text-white shrink-0 shadow-sm">
+<span class="material-symbols-outlined text-xl">groups</span>
+</div>
+<div>
+<span class="text-xs font-bold text-gold-600 uppercase tracking-widest block mb-1">現</span>
+<h4 class="text-lg font-bold text-navy">한국리더십센터 전문FT</h4>
+</div>
+</div>
+<div class="flex gap-5 items-start reveal" style="transition-delay:0.1s">
+<div class="w-11 h-11 flex items-center justify-center bg-navy rounded-full text-white shrink-0 shadow-sm">
+<span class="material-symbols-outlined text-xl">school</span>
+</div>
+<div>
+<span class="text-xs font-bold text-gold-600 uppercase tracking-widest block mb-1">現</span>
+<h4 class="text-lg font-bold text-navy">TMD교육그룹 전문강사</h4>
+</div>
+</div>
+<div class="flex gap-5 items-start reveal" style="transition-delay:0.15s">
+<div class="w-11 h-11 flex items-center justify-center bg-navy-600/40 rounded-full text-white shrink-0 shadow-sm">
+<span class="material-symbols-outlined text-xl">history_edu</span>
+</div>
+<div>
+<span class="text-xs font-bold text-navy-600/50 uppercase tracking-widest block mb-1">前</span>
+<h4 class="text-lg font-bold text-navy">우송대학교 교양교직과 외래교수</h4>
+</div>
+</div>
+<div class="flex gap-5 items-start reveal" style="transition-delay:0.2s">
+<div class="w-11 h-11 flex items-center justify-center bg-navy-600/40 rounded-full text-white shrink-0 shadow-sm">
+<span class="material-symbols-outlined text-xl">menu_book</span>
+</div>
+<div>
+<span class="text-xs font-bold text-navy-600/50 uppercase tracking-widest block mb-1">前</span>
+<h4 class="text-lg font-bold text-navy">한솔교육 교사교육 강사</h4>
+</div>
+</div>
+<div class="flex gap-5 items-start reveal" style="transition-delay:0.25s">
+<div class="w-11 h-11 flex items-center justify-center bg-navy-600/40 rounded-full text-white shrink-0 shadow-sm">
+<span class="material-symbols-outlined text-xl">auto_stories</span>
+</div>
+<div>
+<span class="text-xs font-bold text-navy-600/50 uppercase tracking-widest block mb-1">전공</span>
+<h4 class="text-lg font-bold text-navy">동국대학교 국어국문학 전공</h4>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Certificate -->
+<section class="py-section-gap bg-navy-50/60 w-full border-y border-navy-100">
+<div class="px-gutter max-w-container-max mx-auto">
+<div class="mb-10 reveal">
+<h2 class="text-2xl md:text-3xl font-extrabold text-navy">Certificate</h2>
+<p class="text-sm text-navy-600/60 mt-2 uppercase tracking-widest">자격 및 개발 프로그램</p>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<div class="reveal lift-card bg-white rounded-xl border border-navy-100 p-5 shadow-sm flex gap-4 items-start">
+<div class="w-11 h-11 shrink-0 flex items-center justify-center bg-gold-50 rounded-full text-gold-600"><span class="material-symbols-outlined">self_improvement</span></div>
+<div>「성공하는 사람들의 7가지 습관」Facilitator <span class="block text-sm text-navy-600/60 mt-1">한국리더십센터</span></div>
+</div>
+<div class="reveal lift-card bg-white rounded-xl border border-navy-100 p-5 shadow-sm flex gap-4 items-start" style="transition-delay:0.05s">
+<div class="w-11 h-11 shrink-0 flex items-center justify-center bg-gold-50 rounded-full text-gold-600"><span class="material-symbols-outlined">diversity_3</span></div>
+<div>「6CP」Facilitator <span class="block text-sm text-navy-600/60 mt-1">프랭클린 코비</span></div>
+</div>
+<div class="reveal lift-card bg-white rounded-xl border border-navy-100 p-5 shadow-sm flex gap-4 items-start" style="transition-delay:0.1s">
+<div class="w-11 h-11 shrink-0 flex items-center justify-center bg-gold-50 rounded-full text-gold-600"><span class="material-symbols-outlined">fact_check</span></div>
+<div>교육이수: 「4ERL」/「창의적 교수법」/「성교육 활동가」</div>
+</div>
+<div class="reveal lift-card bg-white rounded-xl border border-navy-100 p-5 shadow-sm flex gap-4 items-start" style="transition-delay:0.15s">
+<div class="w-11 h-11 shrink-0 flex items-center justify-center bg-gold-50 rounded-full text-gold-600"><span class="material-symbols-outlined">design_services</span></div>
+<div>개발: SL 신입사원·승진자 교육 프로그램 <span class="block text-sm text-navy-600/60 mt-1">고려아카데미컨설팅</span></div>
+</div>
+<div class="reveal lift-card bg-white rounded-xl border border-navy-100 p-5 shadow-sm flex gap-4 items-start" style="transition-delay:0.2s">
+<div class="w-11 h-11 shrink-0 flex items-center justify-center bg-gold-50 rounded-full text-gold-600"><span class="material-symbols-outlined">work</span></div>
+<div>청소년 취업&amp;진로 프로그램 <span class="block text-sm text-navy-600/60 mt-1">한국리더십센터</span></div>
+</div>
+<div class="reveal lift-card bg-white rounded-xl border border-navy-100 p-5 shadow-sm flex gap-4 items-start" style="transition-delay:0.25s">
+<div class="w-11 h-11 shrink-0 rounded-full overflow-hidden border border-navy-100"><img src="book.png" alt="청소년 진로수업대본 책 표지" class="w-full h-full object-cover"></div>
+<div>저서: 『청소년 진로수업대본』 <span class="block text-sm text-navy-600/60 mt-1">마인드빌딩 · 공저 6인</span></div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Specialty -->
+<section class="py-section-gap w-full px-gutter max-w-container-max mx-auto scroll-mt-nav" id="specialty">
+<div class="mb-12 reveal">
+<h2 class="text-2xl md:text-3xl font-extrabold text-navy">Specialty</h2>
+<p class="text-sm text-navy-600/60 mt-2 uppercase tracking-widest">전문 분야</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<div class="reveal lift-card bg-white rounded-xl border border-navy-100 p-8 shadow-sm">
+<div class="w-12 h-12 flex items-center justify-center bg-navy rounded-lg text-white mb-5">
+<span class="material-symbols-outlined">emoji_objects</span>
+</div>
+<h3 class="text-xl font-bold text-navy mb-3">리더십</h3>
+<p class="text-navy-600/80 leading-relaxed">셀프리더십 (긍정적 패러다임, 주도성, 비전, 시간관리) / Facilitator</p>
+</div>
+<div class="reveal lift-card bg-white rounded-xl border border-navy-100 p-8 shadow-sm" style="transition-delay:0.05s">
+<div class="w-12 h-12 flex items-center justify-center bg-navy rounded-lg text-white mb-5">
+<span class="material-symbols-outlined">work</span>
+</div>
+<h3 class="text-xl font-bold text-navy mb-3">커리어</h3>
+<p class="text-navy-600/80 leading-relaxed">취업, 진로 설계 / 스피치, 프레젠테이션 / 자기소개서, 면접스킬 / 자기주도학습</p>
+</div>
+<div class="reveal lift-card bg-white rounded-xl border border-navy-100 p-8 shadow-sm" style="transition-delay:0.1s">
+<div class="w-12 h-12 flex items-center justify-center bg-navy rounded-lg text-white mb-5">
+<span class="material-symbols-outlined">forum</span>
+</div>
+<h3 class="text-xl font-bold text-navy mb-3">의사소통</h3>
+<p class="text-navy-600/80 leading-relaxed">관계리더십 (커뮤니케이션, 신뢰 등) / 조직활성화 / 팀빌딩 / 자녀교육 코칭 / 성교육</p>
+</div>
+</div>
+</section>
+
+<!-- Clients -->
+<section class="py-section-gap bg-navy-50/60 w-full border-y border-navy-100 scroll-mt-nav" id="clients">
+<div class="px-gutter max-w-container-max mx-auto">
+<div class="mb-10 reveal">
+<h2 class="text-2xl md:text-3xl font-extrabold text-navy">Clients</h2>
+<p class="text-sm text-navy-600/60 mt-2 uppercase tracking-widest">출강 기업 및 학교</p>
+</div>
+<div class="reveal mb-10">
+<h3 class="font-bold text-navy mb-4">기업 및 공공기관 <span class="text-sm font-normal text-navy-600/50">(대표 출강처)</span></h3>
+<div class="flex flex-wrap gap-2">
+<span class="px-4 py-2 rounded-full bg-white border border-navy-100 text-sm text-navy-600/80 hover:bg-navy hover:text-white transition-colors">삼성전자</span>
+<span class="px-4 py-2 rounded-full bg-white border border-navy-100 text-sm text-navy-600/80 hover:bg-navy hover:text-white transition-colors">CJ</span>
+<span class="px-4 py-2 rounded-full bg-white border border-navy-100 text-sm text-navy-600/80 hover:bg-navy hover:text-white transition-colors">SK하이닉스</span>
+<span class="px-4 py-2 rounded-full bg-white border border-navy-100 text-sm text-navy-600/80 hover:bg-navy hover:text-white transition-colors">삼성서울병원</span>
+<span class="px-4 py-2 rounded-full bg-white border border-navy-100 text-sm text-navy-600/80 hover:bg-navy hover:text-white transition-colors">LG화학</span>
+<span class="px-4 py-2 rounded-full bg-white border border-navy-100 text-sm text-navy-600/80 hover:bg-navy hover:text-white transition-colors">국민은행</span>
+<span class="px-4 py-2 rounded-full bg-white border border-navy-100 text-sm text-navy-600/80 hover:bg-navy hover:text-white transition-colors">한화</span>
+<span class="px-4 py-2 rounded-full bg-white border border-navy-100 text-sm text-navy-600/80 hover:bg-navy hover:text-white transition-colors">KT&amp;G</span>
+<span class="px-4 py-2 rounded-full bg-white border border-navy-100 text-sm text-navy-600/80 hover:bg-navy hover:text-white transition-colors">현대건설</span>
+<span class="px-4 py-2 rounded-full bg-white border border-navy-100 text-sm text-navy-600/80 hover:bg-navy hover:text-white transition-colors">GS칼텍스</span>
+<span class="px-4 py-2 rounded-full bg-white border border-navy-100 text-sm text-navy-600/80 hover:bg-navy hover:text-white transition-colors">현대아산</span>
+<span class="px-4 py-2 rounded-full bg-white border border-navy-100 text-sm text-navy-600/80 hover:bg-navy hover:text-white transition-colors">한국일보</span>
+<span class="px-4 py-2 rounded-full bg-white border border-navy-100 text-sm text-navy-600/80 hover:bg-navy hover:text-white transition-colors">한국경제</span>
+<span class="px-4 py-2 rounded-full bg-white border border-navy-100 text-sm text-navy-600/80 hover:bg-navy hover:text-white transition-colors">신한은행</span>
+<span class="px-4 py-2 rounded-full bg-white border border-navy-100 text-sm text-navy-600/80 hover:bg-navy hover:text-white transition-colors">신한카드</span>
+<span class="px-4 py-2 rounded-full bg-white border border-navy-100 text-sm text-navy-600/80 hover:bg-navy hover:text-white transition-colors">코오롱</span>
+<span class="px-4 py-2 rounded-full bg-white border border-navy-100 text-sm text-navy-600/80 hover:bg-navy hover:text-white transition-colors">KBS</span>
+<span class="px-4 py-2 rounded-full bg-white border border-navy-100 text-sm text-navy-600/80 hover:bg-navy hover:text-white transition-colors">현대차정몽구재단</span>
+<span class="px-4 py-2 rounded-full bg-white border border-navy-100 text-sm text-navy-600/80 hover:bg-navy hover:text-white transition-colors">고용노동부</span>
+<span class="px-4 py-2 rounded-full bg-white border border-navy-100 text-sm text-navy-600/80 hover:bg-navy hover:text-white transition-colors">통일부</span>
+<span class="px-4 py-2 rounded-full bg-white border border-navy-100 text-sm text-navy-600/80 hover:bg-navy hover:text-white transition-colors">기아자동차</span>
+<span class="px-4 py-2 rounded-full bg-white border border-navy-100 text-sm text-navy-600/80 hover:bg-navy hover:text-white transition-colors">어린이재단</span>
+<span class="px-4 py-2 rounded-full bg-white border border-navy-100 text-sm text-navy-600/80 hover:bg-navy hover:text-white transition-colors">서울시교육청</span>
+<span class="px-4 py-2 rounded-full bg-white border border-navy-100 text-sm text-navy-600/80 hover:bg-navy hover:text-white transition-colors">경북교육청</span>
+<span class="px-4 py-2 rounded-full bg-white border border-navy-100 text-sm text-navy-600/80 hover:bg-navy hover:text-white transition-colors">대구교육청</span>
+<span class="px-4 py-2 rounded-full bg-white border border-navy-100 text-sm text-navy-600/80 hover:bg-navy hover:text-white transition-colors">강남서초교육지원청</span>
+<span class="px-4 py-2 rounded-full bg-white border border-navy-100 text-sm text-navy-600/80 hover:bg-navy hover:text-white transition-colors">충북교육청</span>
+<span class="px-4 py-2 rounded-full bg-navy-50 border border-navy-100 text-sm text-navy-600/60 italic">외 다수 출강</span>
+</div>
+</div>
+<div class="reveal">
+<h3 class="font-bold text-navy mb-4">학교 <span class="text-sm font-normal text-navy-600/50">(대표 출강처)</span></h3>
+<div class="flex flex-wrap gap-2">
+<span class="px-4 py-2 rounded-full bg-white border border-navy-100 text-sm text-navy-600/80 hover:bg-gold hover:text-white transition-colors">연세대학교</span>
+<span class="px-4 py-2 rounded-full bg-white border border-navy-100 text-sm text-navy-600/80 hover:bg-gold hover:text-white transition-colors">동국대학교</span>
+<span class="px-4 py-2 rounded-full bg-white border border-navy-100 text-sm text-navy-600/80 hover:bg-gold hover:text-white transition-colors">가톨릭대학교</span>
+<span class="px-4 py-2 rounded-full bg-white border border-navy-100 text-sm text-navy-600/80 hover:bg-gold hover:text-white transition-colors">숭실대학교</span>
+<span class="px-4 py-2 rounded-full bg-white border border-navy-100 text-sm text-navy-600/80 hover:bg-gold hover:text-white transition-colors">인하대학교</span>
+<span class="px-4 py-2 rounded-full bg-white border border-navy-100 text-sm text-navy-600/80 hover:bg-gold hover:text-white transition-colors">서울시립대학교</span>
+<span class="px-4 py-2 rounded-full bg-white border border-navy-100 text-sm text-navy-600/80 hover:bg-gold hover:text-white transition-colors">우송대학교</span>
+<span class="px-4 py-2 rounded-full bg-white border border-navy-100 text-sm text-navy-600/80 hover:bg-gold hover:text-white transition-colors">백석대학교</span>
+<span class="px-4 py-2 rounded-full bg-white border border-navy-100 text-sm text-navy-600/80 hover:bg-gold hover:text-white transition-colors">호서대학교</span>
+<span class="px-4 py-2 rounded-full bg-white border border-navy-100 text-sm text-navy-600/80 hover:bg-gold hover:text-white transition-colors">조선대학교</span>
+<span class="px-4 py-2 rounded-full bg-white border border-navy-100 text-sm text-navy-600/80 hover:bg-gold hover:text-white transition-colors">한국외국어대학교</span>
+<span class="px-4 py-2 rounded-full bg-white border border-navy-100 text-sm text-navy-600/80 hover:bg-gold hover:text-white transition-colors">이화여자대학교</span>
+<span class="px-4 py-2 rounded-full bg-white border border-navy-100 text-sm text-navy-600/80 hover:bg-gold hover:text-white transition-colors">고양외국어고등학교</span>
+<span class="px-4 py-2 rounded-full bg-white border border-navy-100 text-sm text-navy-600/80 hover:bg-gold hover:text-white transition-colors">세종국제고등학교</span>
+<span class="px-4 py-2 rounded-full bg-white border border-navy-100 text-sm text-navy-600/80 hover:bg-gold hover:text-white transition-colors">한민고등학교</span>
+<span class="px-4 py-2 rounded-full bg-white border border-navy-100 text-sm text-navy-600/80 hover:bg-gold hover:text-white transition-colors">삼성고등학교</span>
+<span class="px-4 py-2 rounded-full bg-white border border-navy-100 text-sm text-navy-600/80 hover:bg-gold hover:text-white transition-colors">대원외국어고등학교</span>
+<span class="px-4 py-2 rounded-full bg-white border border-navy-100 text-sm text-navy-600/80 hover:bg-gold hover:text-white transition-colors">대원국제중학교</span>
+<span class="px-4 py-2 rounded-full bg-white border border-navy-100 text-sm text-navy-600/80 hover:bg-gold hover:text-white transition-colors">압구정중학교</span>
+<span class="px-4 py-2 rounded-full bg-white border border-navy-100 text-sm text-navy-600/80 hover:bg-gold hover:text-white transition-colors">경기도학교</span>
+<span class="px-4 py-2 rounded-full bg-navy-50 border border-navy-100 text-sm text-navy-600/60 italic">외 다수 출강</span>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Contact -->
+<section class="py-section-gap bg-navy text-white scroll-mt-nav" id="contact">
+<div class="w-full px-gutter max-w-container-max mx-auto text-center space-y-10 reveal">
+<div class="max-w-2xl mx-auto space-y-2">
+<h2 class="text-2xl md:text-3xl font-extrabold">문의 및 강의 요청</h2>
+<p class="text-white/70">강연·교육 프로그램 관련 문의는 아래 연락처로 부탁드립니다.</p>
+</div>
+<div class="flex flex-col md:flex-row justify-center gap-12 pt-4">
+<div class="flex flex-col items-center gap-2">
+<span class="material-symbols-outlined text-4xl text-gold">call</span>
+<span class="text-xs uppercase tracking-widest text-white/50">Mobile</span>
+<span class="text-lg font-bold">010-2588-4896</span>
+</div>
+<div class="w-px bg-white/10 hidden md:block"></div>
+<div class="flex flex-col items-center gap-2">
+<span class="material-symbols-outlined text-4xl text-gold">mail</span>
+<span class="text-xs uppercase tracking-widest text-white/50">Email</span>
+<a class="text-lg font-bold hover:text-gold-100 transition-colors" href="mailto:spoture@naver.com">spoture@naver.com</a>
+</div>
+</div>
+</div>
+</section>
+</main>
+
+<!-- Footer -->
+<footer class="bg-paper border-t border-navy-100">
+<div class="flex flex-col md:flex-row justify-between items-center w-full px-gutter py-8 max-w-container-max mx-auto">
+<div class="mb-4 md:mb-0 text-center md:text-left">
+<div class="font-extrabold text-navy">권태용 <span class="text-gold">Facilitator</span></div>
+<p class="text-sm text-navy-600/60 mt-1">Self-Leadership · Career · Communication</p>
+</div>
+<div class="flex flex-col items-center md:items-end gap-1">
+<a class="text-sm text-navy-600/70 hover:text-navy transition-colors" href="mailto:spoture@naver.com">spoture@naver.com</a>
+<p class="text-xs text-navy-600/50">© 2026 Kwon Tae-yong. All rights reserved.</p>
+</div>
+</div>
+</footer>
+
+<script>
+    const menuToggle = document.getElementById('menu-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+    menuToggle.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+        mobileMenu.classList.toggle('flex');
+    });
+
+    const progressBar = document.getElementById('scroll-progress');
+    function updateProgress() {
+        const scrollTop = window.scrollY;
+        const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+        const pct = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
+        progressBar.style.width = pct + '%';
+    }
+    window.addEventListener('scroll', updateProgress);
+    updateProgress();
+
+    const sections = document.querySelectorAll('section[id]');
+    const navLinks = document.querySelectorAll('header nav a');
+    window.addEventListener('scroll', () => {
+        let current = '';
+        sections.forEach(section => {
+            if (window.pageYOffset >= section.offsetTop - 150) current = section.getAttribute('id');
+        });
+        navLinks.forEach(link => {
+            link.classList.remove('text-navy');
+            link.classList.add('text-navy-600/70');
+            if (link.getAttribute('href').slice(1) === current) {
+                link.classList.add('text-navy');
+                link.classList.remove('text-navy-600/70');
+            }
+        });
+    });
+
+    const revealEls = document.querySelectorAll('.reveal, .reveal-left, .reveal-right');
+    const revealObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('in-view');
+                revealObserver.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.15, rootMargin: '0px 0px -60px 0px' });
+    revealEls.forEach(el => revealObserver.observe(el));
+
+    const counters = document.querySelectorAll('.stat-number');
+    const counterObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (!entry.isIntersecting) return;
+            const el = entry.target;
+            const target = parseInt(el.getAttribute('data-count'), 10);
+            const duration = 1200;
+            const startTime = performance.now();
+            function tick(now) {
+                const progress = Math.min((now - startTime) / duration, 1);
+                const eased = 1 - Math.pow(1 - progress, 3);
+                el.textContent = Math.round(eased * target);
+                if (progress < 1) requestAnimationFrame(tick);
+            }
+            requestAnimationFrame(tick);
+            counterObserver.unobserve(el);
+        });
+    }, { threshold: 0.5 });
+    counters.forEach(c => counterObserver.observe(c));
+</script>
+</body>
+</html>
